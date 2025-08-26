@@ -2,25 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@layer base {
+  :root {
+    --cream: #F5F1E8;
+    --gold: #D4AF37;
+    --dark-gray: #2A2A2A;
+  }
 
-:root {
-  --cream: #F5F1E8;
-  --gold: #D4AF37;
-  --dark-gray: #2A2A2A;
-}
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  body {
+    color: var(--dark-gray);
+    background: var(--cream);
+  }
 
-body {
-  color: var(--dark-gray);
-  background: var(--cream);
-}
-
-html {
-  scroll-behavior: smooth;
+  html {
+    scroll-behavior: smooth;
+  }
 }
