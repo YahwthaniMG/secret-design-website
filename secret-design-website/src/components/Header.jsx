@@ -16,8 +16,9 @@ export default function Header() {
               <Image 
                 src="/images/icon.jpg" 
                 alt="Secret Design Logo" 
-                fill
-                className="rounded-full object-cover"
+                className="rounded-full mx-auto lg:mx-0 mb-6 shadow-xl"
+                width={60} 
+                height={60}
               />
             </div>
             <div>

@@ -31,8 +31,8 @@ export default function Hero() {
                 <Image 
                   src="/images/logo.jpg" 
                   alt="Secret Design Logo" 
-                  width={80} 
-                  height={80}
+                  width={120} 
+                  height={120}
                   className="rounded-full mx-auto lg:mx-0 mb-6 shadow-xl"
                 />
               </div>
