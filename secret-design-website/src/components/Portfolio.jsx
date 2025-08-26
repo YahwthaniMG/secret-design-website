@@ -1,94 +1,78 @@
 export default function Portfolio() {
   const projects = [
-    {
+    /*{
       id: 1,
-      title: "Renovatie Wierden",
-      category: "3D",
-      description: "Een nieuwe uitstraling voor deze keuken met ophangbare keukens in Wierden.",
-      image: "/api/placeholder/400/300"
+      title: "Casa Residencial Zapopan",
+      category: "Diseño Completo",
+      description: "Renovación integral de casa habitación con enfoque minimalista y funcional para familia joven.",
+      color: "from-blue-200 to-blue-300"
     },
     {
       id: 2,
-      title: "Interieuradvies Hellendoorn", 
-      category: "Realisatie",
-      description: "Interieuradvies en styling maken van dit ruime nieuwbouwwoning in Hellendoorn.",
-      image: "/api/placeholder/400/300"
+      title: "Oficinas Corporativas Guadalajara", 
+      category: "Gestión de Proyecto",
+      description: "Diseño y coordinación de espacios de trabajo colaborativo para empresa tecnológica en crecimiento.",
+      color: "from-green-200 to-green-300"
     },
     {
       id: 3,
-      title: "Nieuwbouwwoning Hellendoorn",
-      category: "Realisatie", 
-      description: "Volledige 3D vormgeving en inrichting voor deze vrijstaande woning in Hellendoorn.",
-      image: "/api/placeholder/400/300"
+      title: "Departamento Moderno Providencia",
+      category: "Consultoría",
+      description: "Asesoría especializada en optimización de espacios pequeños con soluciones inteligentes de almacenamiento.",
+      color: "from-purple-200 to-purple-300"
     },
     {
       id: 4,
-      title: "Nieuwbouwwoning Wierden",
-      category: "3D",
-      description: "3D ontwerp van dit benedenverdieping en terras voor deze vrijstaande woning.",
-      image: "/api/placeholder/400/300"
+      title: "Restaurante Conceptual Centro",
+      category: "Diseño Completo",
+      description: "Proyecto integral desde concepto hasta ejecución para restaurante de cocina contemporánea mexicana.",
+      color: "from-amber-200 to-amber-300"
     },
     {
       id: 5,
-      title: "Modern Apartment",
-      category: "Realisatie",
-      description: "Complete renovation of a modern city apartment with minimalist design.",
-      image: "/api/placeholder/400/300"
+      title: "Showroom Comercial Tlaquepaque",
+      category: "Gestión de Proyecto",
+      description: "Coordinación de diseño y construcción para espacio comercial de muebles y decoración de lujo.",
+      color: "from-rose-200 to-rose-300"
     },
     {
       id: 6,
-      title: "Luxury Villa",
-      category: "3D",
-      description: "Exclusive interior design for a luxury villa with contemporary elements.",
-      image: "/api/placeholder/400/300"
-    }
+      title: "Villa Familiar Ajijic",
+      category: "Consultoría",
+      description: "Consultoría integral para renovación de villa con integración de espacios interiores y exteriores.",
+      color: "from-teal-200 to-teal-300"
+    }*/
   ]
 
   return (
-    <section id="portfolio" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-8">
-            <span className="text-2xl font-light tracking-[0.2em]" style={{ color: '#2A2A2A' }}>
-              T.A.
-            </span>
-          </div>
-          <nav className="flex justify-center space-x-8 text-sm">
-            <a href="#portfolio" className="text-gray-600 hover:text-gray-900">Portfolio</a>
-            <a href="#aanbod" className="text-gray-600 hover:text-gray-900">Aanbod</a>
-            <a href="#over-ta" className="text-gray-600 hover:text-gray-900">Over TA</a>
-            <a href="#blog" className="text-gray-600 hover:text-gray-900">Blog</a>
-            <div className="flex items-center">
-              <span className="text-gray-600 mr-2">Neem contact op</span>
-              <span className="text-gray-600">→</span>
-            </div>
-            <button className="text-gray-600">Menu</button>
-          </nav>
-        </div>
-
+    <section id="portfolio" className="py-24 bg-white">
+      <div className="container mx-auto px-6">
+        
         {/* Portfolio Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {projects.map((project) => (
             <div key={project.id} className="group cursor-pointer">
-              <div className="bg-gray-100 rounded-lg overflow-hidden mb-4 aspect-square">
-                <img 
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+              <div className={`bg-gradient-to-br ${project.color} rounded-2xl overflow-hidden mb-6 aspect-square shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105`}>
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-2xl">🏠</span>
+                    </div>
+                    <p className="text-sm font-medium opacity-90">Ver Proyecto</p>
+                  </div>
+                </div>
               </div>
               
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <div className="flex justify-between items-start">
-                  <h3 className="font-medium text-gray-900 text-sm leading-tight">
+                  <h3 className="font-semibold text-gray-900 text-lg leading-tight">
                     {project.title}
                   </h3>
-                  <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                  <span className="text-xs text-gray-500 bg-gray-100 px-3 py-1 rounded-full whitespace-nowrap ml-2">
                     {project.category}
                   </span>
                 </div>
-                <p className="text-xs text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed">
                   {project.description}
                 </p>
               </div>
@@ -96,46 +80,42 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Bottom section */}
-        <div className="mt-20 grid lg:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-2xl font-light mb-4" style={{ color: '#2A2A2A' }}>
-              VRAAG EEN OFFERTE AAN VOOR EIGEN INTERIEUR!
-            </h2>
-            <p className="text-gray-600 text-sm mb-6">
-              Geef uw informatie op en ik bel u zo snel mogelijk op!
-            </p>
-            
-            <div className="grid grid-cols-2 gap-4 mb-4">
-              <input 
-                type="email"
-                placeholder="Email adres"
-                className="p-3 border border-gray-300 rounded text-sm"
-              />
-              <input 
-                type="tel"
-                placeholder="Telefoon nummer"
-                className="p-3 border border-gray-300 rounded text-sm"
-              />
-            </div>
-            <input 
-              type="text"
-              placeholder="Bericht"
-              className="w-full p-3 border border-gray-300 rounded text-sm mb-4"
-            />
-            <button className="bg-gray-800 text-white px-6 py-3 rounded text-sm hover:bg-gray-900 transition-colors">
-              Verzenden →
-            </button>
-          </div>
-          
-          <div className="flex justify-end">
-            <div className="text-right space-y-2">
-              <p className="text-xs text-gray-500">Instagram Highlights</p>
-              <div className="grid grid-cols-5 gap-2">
-                {[1,2,3,4,5].map(i => (
-                  <div key={i} className="w-16 h-16 bg-gray-200 rounded"></div>
-                ))}
+        {/* Contact section */}
+        <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-3xl p-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-light mb-6" style={{ color: '#2A2A2A', fontFamily: 'Playfair Display, serif' }}>
+                ¿Listo para transformar tu espacio?
+              </h2>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Solicita una consulta gratuita y descubre cómo podemos hacer realidad tu visión. 
+                Nuestro equipo te acompañará en cada paso del proceso.
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <input 
+                  type="email"
+                  placeholder="Tu email"
+                  className="p-4 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-gray-400 transition-colors"
+                />
+                <input 
+                  type="tel"
+                  placeholder="Tu teléfono"
+                  className="p-4 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-gray-400 transition-colors"
+                />
               </div>
+              <textarea 
+                placeholder="Cuéntanos sobre tu proyecto..."
+                rows={4}
+                className="w-full p-4 border border-gray-200 rounded-xl text-sm mb-6 focus:outline-none focus:border-gray-400 transition-colors resize-none"
+              ></textarea>
+              <button className="bg-black text-white px-8 py-4 rounded-full text-sm hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg font-medium">
+                Solicitar Consulta Gratuita →
+              </button>
+            </div>
+            
+            <div className="hidden lg:block">
+              <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl h-80 shadow-lg"></div>
             </div>
           </div>
         </div>
