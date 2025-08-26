@@ -1,0 +1,62 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+.container {
+  width: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-full {
+  border-radius: 3.40282e38px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@layer base {
+  :root {
+    --cream: #f5f1e8;
+    --gold: #d4af37;
+    --dark-gray: #2a2a2a;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    color: var(--dark-gray);
+    background: var(--cream);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_css_bad6b30c._.single.css.map*/
