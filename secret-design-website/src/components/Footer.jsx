@@ -1,84 +1,97 @@
-import Image from 'next/image'
+'use client'
+
+import { useState, useEffect } from 'react'
 
 export default function Footer() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  
+  const carouselImages = [
+    { id: 1, color: "from-stone-200 to-stone-400" },
+    { id: 2, color: "from-slate-200 to-slate-400" },
+    { id: 3, color: "from-zinc-200 to-zinc-400" },
+    { id: 4, color: "from-neutral-200 to-neutral-400" }
+  ]
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % carouselImages.length)
+    }, 3500)
+    return () => clearInterval(timer)
+  }, [carouselImages.length])
+
   return (
-    <footer className="bg-black text-white">
-      <div className="container mx-auto px-6 py-20">
-        {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-4 gap-12 mb-16">
-          {/* Logo y descripción */}
-          <div className="lg:col-span-2">
-            <div className="mb-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 relative">
-                  <Image 
-                    src="/images/logo.jpg" 
-                    alt="Secret Design Logo" 
-                    fill
-                    className="rounded-full object-cover"
-                  />
+    <footer className="bg-gray-50 py-16">
+      <div className="container mx-auto px-6">
+        
+        {/* Carrusel de imágenes */}
+        <div className="mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {carouselImages.map((image, index) => {
+              const slideIndex = (currentSlide + index) % carouselImages.length
+              const slideImage = carouselImages[slideIndex]
+              return (
+                <div key={slideIndex} className="relative">
+                  <div className={`bg-gradient-to-br ${slideImage.color} rounded-lg h-48 shadow-md transition-all duration-500`}>
+                    <div className="w-full h-full flex items-center justify-center">
+                      <div className="text-center text-white">
+                        <div className="w-12 h-12 bg-white/20 rounded-full mx-auto mb-3 flex items-center justify-center">
+                          <span className="text-lg">🏠</span>
+                        </div>
+                        <p className="text-xs font-medium opacity-90">Imagen {slideIndex + 1}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-bold text-2xl tracking-wide">SECRET DESIGN</h3>
-                  <p className="text-sm text-gray-300 tracking-wider">GERENCIA DE PROYECTOS</p>
-                </div>
-              </div>
-              <p className="text-gray-300 leading-relaxed max-w-lg text-lg">
-                Transformamos espacios en experiencias extraordinarias, donde cada detalle cuenta una historia única a través del diseño de interiores y la gestión integral de proyectos arquitectónicos.
-              </p>
-            </div>
-          </div>
-
-          {/* Enlaces rápidos */}
-          <div>
-            <h4 className="font-semibold mb-6 text-xl">Servicios</h4>
-            <ul className="space-y-3 text-gray-300">
-              <li><a href="#servicios" className="hover:text-white transition-colors text-lg">Diseño de Interiores</a></li>
-              <li><a href="#servicios" className="hover:text-white transition-colors text-lg">Gestión de Proyectos</a></li>
-              <li><a href="#servicios" className="hover:text-white transition-colors text-lg">Consultoría Especializada</a></li>
-              <li><a href="#servicios" className="hover:text-white transition-colors text-lg">Renderizado 3D</a></li>
-              <li><a href="#servicios" className="hover:text-white transition-colors text-lg">Supervisión de Obra</a></li>
-            </ul>
-          </div>
-
-          {/* Contacto */}
-          <div>
-            <h4 className="font-semibold mb-6 text-xl">Contacto</h4>
-            <div className="space-y-4 text-gray-300">
-              <div>
-                <p className="text-sm text-gray-400 mb-1">Email:</p>
-                <a href="mailto:contacto@secretdesign.com" className="hover:text-white transition-colors text-lg">
-                  yuvia@secretdesign.com
-                </a>
-              </div>
-              <div>
-                <p className="text-sm text-gray-400 mb-1">Teléfono:</p>
-                <a href="tel:+523314683729" className="hover:text-white transition-colors text-lg">
-                  +52 33 1468 3729
-                </a>
-              </div>
-              <div>
-                <p className="text-sm text-gray-400 mb-1">WhatsApp:</p>
-                <a href="https://wa.me/523314683729" className="hover:text-white transition-colors text-lg">
-                  +52 33 1468 3729
-                </a>
-              </div>
-              <div>
-                <p className="text-sm text-gray-400 mb-1">Ubicación:</p>
-                <p className="text-lg">Zapopan, Jalisco, México</p>
-              </div>
-            </div>
+              )
+            })}
           </div>
         </div>
 
-        {/* Social Media y Copyright */}
-        <div className="border-t border-gray-800 pt-10">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-8 mb-6 md:mb-0">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors text-lg">
-                <span className="sr-only">Instagram</span>
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.621 5.367 11.988 11.988 11.988s11.987-5.367 11.987-11.988C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.349-1.052-2.349-2.35 0-1.297 1.052-2.349 2.349-2.349 1.297 0 2.349 1.052 2.349 2.349 0 1.298-1.052 2.35-2.349 2.35zm7.718 0c-1.297 0-2.349-1.052-2.349-2.35 0-1.297 1.052-2.349 2.349-2.349 1.297 0 2.35 1.052 2.35 2.349 0 1.298-1.053 2.35-2.35 2.35z"/>
+        {/* Mensaje de contacto */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-6">
+            ¿Estás listo para dar vida a tu proyecto de sueños?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+            Contáctanos hoy para discutir los objetivos de tu proyecto, solicitar una cotización, o programar una consulta.
+          </p>
+          <button className="bg-blue-900 text-white px-10 py-4 text-lg font-medium hover:bg-blue-800 transition-colors">
+            Obtenga una Cotización Gratuita
+          </button>
+        </div>
+
+        {/* Logo y copyright */}
+        <div className="text-center border-t border-gray-200 pt-8">
+          <div className="mb-4">
+            <div className="flex justify-center mb-2">
+              <div className="flex space-x-1">
+                <div className="w-1 h-4 bg-gray-400"></div>
+                <div className="w-1 h-6 bg-gray-600"></div>
+                <div className="w-1 h-5 bg-gray-500"></div>
+                <div className="w-1 h-7 bg-gray-700"></div>
+                <div className="w-1 h-4 bg-gray-400"></div>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 tracking-wide">SECRET DESIGN</h3>
+            <p className="text-xs text-gray-600 tracking-widest">ESLOGAN AQUÍ</p>
+            <div className="flex justify-center mt-2">
+              <div className="flex space-x-1">
+                <div className="w-1 h-4 bg-gray-400"></div>
+                <div className="w-1 h-6 bg-gray-600"></div>
+                <div className="w-1 h-5 bg-gray-500"></div>
+                <div className="w-1 h-7 bg-gray-700"></div>
+                <div className="w-1 h-4 bg-gray-400"></div>
+              </div>
+            </div>
+          </div>
+          <p className="text-gray-500 text-sm">
+            © 2023 por Nombre de la Empresa. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}.449 16.988c-1.297 0-2.349-1.052-2.349-2.35 0-1.297 1.052-2.349 2.349-2.349 1.297 0 2.349 1.052 2.349 2.349 0 1.298-1.052 2.35-2.349 2.35zm7.718 0c-1.297 0-2.349-1.052-2.349-2.35 0-1.297 1.052-2.349 2.349-2.349 1.297 0 2.35 1.052 2.35 2.349 0 1.298-1.053 2.35-2.35 2.35z"/>
                 </svg>
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors text-lg">

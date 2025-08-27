@@ -7,55 +7,43 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <header className="w-full bg-white shadow-sm border-b border-gray-100 py-4">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+        <div className="flex items-center justify-between">
+          {/* Logo y nombre - lado izquierdo */}
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 relative">
-              <Image 
-                src="/images/icon.jpg" 
-                alt="Secret Design Logo" 
-                className="rounded-full mx-auto lg:mx-0 mb-6 shadow-xl"
-                width={60} 
-                height={60}
-              />
-            </div>
-            <div>
-              <h1 className="font-bold text-xl text-gray-900 tracking-wide">SECRET DESIGN</h1>
-              <p className="text-xs text-gray-500 tracking-wider">GERENCIA DE PROYECTOS</p>
+            <div className="text-center">
+              <div className="flex justify-center mb-1">
+                <div className="flex space-x-1">
+                  <div className="w-1 h-4 bg-gray-400"></div>
+                  <div className="w-1 h-6 bg-gray-600"></div>
+                  <div className="w-1 h-5 bg-gray-500"></div>
+                  <div className="w-1 h-7 bg-gray-700"></div>
+                  <div className="w-1 h-4 bg-gray-400"></div>
+                </div>
+              </div>
+              <h1 className="text-2xl font-bold text-blue-900 tracking-wide">SECRET DESIGN</h1>
+              <p className="text-xs text-gray-600 tracking-widest">ESLOGAN AQUÍ</p>
+              <div className="flex justify-center mt-1">
+                <div className="flex space-x-1">
+                  <div className="w-1 h-4 bg-gray-400"></div>
+                  <div className="w-1 h-6 bg-gray-600"></div>
+                  <div className="w-1 h-5 bg-gray-500"></div>
+                  <div className="w-1 h-7 bg-gray-700"></div>
+                  <div className="w-1 h-4 bg-gray-400"></div>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Navigation - Desktop */}
+          {/* Navegación - lado derecho */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
+            <a href="#inicio" className="text-blue-900 font-medium hover:text-blue-700 transition-colors border-b-2 border-blue-900 pb-1">
               Inicio
             </a>
-            <a href="#servicios" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
-              Servicios
+            <a href="#portfolio" className="text-gray-600 font-medium hover:text-blue-900 transition-colors">
+              Portafolio
             </a>
-            <a href="#portfolio" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
-              Portfolio
-            </a>
-            <a href="#sobre-nosotros" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">
-              Sobre Nosotros
-            </a>
-            <div className="flex items-center space-x-2">
-              <a 
-                href="#contacto" 
-                className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
-              >
-                Contacto
-              </a>
-              <span className="text-gray-400">→</span>
-            </div>
-            <button 
-              className="text-gray-600 hover:text-gray-900 font-medium"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              Menú
-            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -73,23 +61,10 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-6 border-t border-gray-100">
+          <div className="md:hidden py-6 border-t border-gray-100 mt-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#inicio" className="text-gray-600 hover:text-gray-900 transition-colors font-medium py-2">
-                Inicio
-              </a>
-              <a href="#servicios" className="text-gray-600 hover:text-gray-900 transition-colors font-medium py-2">
-                Servicios
-              </a>
-              <a href="#portfolio" className="text-gray-600 hover:text-gray-900 transition-colors font-medium py-2">
-                Portfolio
-              </a>
-              <a href="#sobre-nosotros" className="text-gray-600 hover:text-gray-900 transition-colors font-medium py-2">
-                Sobre Nosotros
-              </a>
-              <a href="#contacto" className="text-gray-600 hover:text-gray-900 transition-colors font-medium py-2">
-                Contacto
-              </a>
+              <a href="#inicio" className="text-blue-900 font-medium py-2">Inicio</a>
+              <a href="#portfolio" className="text-gray-600 font-medium py-2">Portafolio</a>
             </nav>
           </div>
         )}
