@@ -4,54 +4,53 @@ export default function FeaturedProjects() {
       id: 1,
       title: "Proyecto 1",
       description: "Se necesita una breve descripción aquí, elaborando sobre el contexto, propósito o detalles relacionados con el tema que se describe.",
-      imageGradient: "from-gray-100 to-gray-300"
+      imageUrl: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
       title: "Proyecto 2", 
       description: "Se necesita una breve descripción aquí, elaborando sobre el contexto, propósito o detalles relacionados con el tema que se describe.",
-      imageGradient: "from-gray-200 to-gray-400"
+      imageUrl: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
       title: "Proyecto 3",
       description: "Se necesita una breve descripción aquí, elaborando sobre el contexto, propósito o detalles relacionados con el tema que se describe.", 
-      imageGradient: "from-gray-300 to-gray-500"
+      imageUrl: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ]
 
   return (
-    <section className="py-20 bg-blue-900">
+    <section className="py-16 bg-blue-900">
       <div className="container mx-auto px-6">
         
         {/* Título de la sección */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             Proyectos Destacados
           </h2>
         </div>
 
         {/* Grid de proyectos */}
-        <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {featuredProjects.map((project) => (
-            <div key={project.id} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               
               {/* Imagen del proyecto */}
-              <div className={`bg-gradient-to-br ${project.imageGradient} h-56 flex items-center justify-center`}>
-                <div className="text-center text-white">
-                  <div className="w-20 h-20 bg-white/30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <div className="w-12 h-12 bg-white/40 rounded-lg"></div>
-                  </div>
-                  <p className="text-sm font-medium">Imagen del Proyecto</p>
-                </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
 
               {/* Contenido del proyecto */}
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-blue-900 mb-4">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-base">
+                <p className="text-gray-600 leading-relaxed text-sm">
                   {project.description}
                 </p>
               </div>

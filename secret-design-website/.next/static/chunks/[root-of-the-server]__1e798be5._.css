@@ -191,6 +191,10 @@
   display: inline-block;
 }
 
+.aspect-\[4\/3\] {
+  aspect-ratio: 4 / 3;
+}
+
 .h-full {
   height: 100%;
 }
@@ -278,6 +282,10 @@
 .bg-gradient-to-br {
   --tw-gradient-position: to bottom right in oklab;
   background-image: linear-gradient(var(--tw-gradient-stops));
+}
+
+.object-cover {
+  object-fit: cover;
 }
 
 .text-center {

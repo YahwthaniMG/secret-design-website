@@ -6,12 +6,11 @@ import Link from 'next/link'
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
   
+  // Imágenes reales de arquitectura minimalista como en tu referencia
   const carouselImages = [
-    { id: 1, color: "bg-gradient-to-br from-blue-200 to-blue-400" },
-    { id: 2, color: "bg-gradient-to-br from-green-200 to-green-400" },
-    { id: 3, color: "bg-gradient-to-br from-purple-200 to-purple-400" },
-    { id: 4, color: "bg-gradient-to-br from-amber-200 to-amber-400" },
-    { id: 5, color: "bg-gradient-to-br from-rose-200 to-rose-400" }
+    { id: 1, url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 2, url: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { id: 3, url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
   ]
 
   useEffect(() => {
@@ -22,61 +21,39 @@ export default function Hero() {
   }, [carouselImages.length])
 
   return (
-    <section id="inicio" className="bg-gray-50 pt-8 pb-20">
+    <section className="bg-gray-50 pt-8 pb-16">
       <div className="container mx-auto px-6">
         
         {/* Mensaje principal */}
-        <div className="text-center mb-20">
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl lg:text-6xl font-bold text-blue-900 mb-6 leading-tight">
             Profesionales de la Construcción<br/>
             Experimentados
           </h1>
-          <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             Tenemos la experiencia para manejar su proyecto con confianza.
           </p>
           <Link 
             href="/contacto"
-            className="inline-block bg-blue-900 text-white px-10 py-4 text-lg font-medium hover:bg-blue-800 transition-colors rounded"
+            className="inline-block bg-blue-900 text-white px-8 py-3 text-lg font-medium hover:bg-blue-800 transition-colors"
           >
             Obtenga una Cotización Gratuita
           </Link>
         </div>
 
-        {/* Carrusel de proyectos - Layout horizontal */}
-        <div className="relative max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {[0, 1, 2].map((offset) => {
-              const slideIndex = (currentSlide + offset) % carouselImages.length
-              const slideImage = carouselImages[slideIndex]
-              return (
-                <div key={`slide-${slideIndex}`} className="relative group cursor-pointer">
-                  <div className={`${slideImage.color} rounded-xl h-72 shadow-lg transition-all duration-700 transform group-hover:scale-105`}>
-                    <div className="w-full h-full flex items-center justify-center rounded-xl">
-                      <div className="text-center text-white">
-                        <div className="w-20 h-20 bg-white bg-opacity-30 rounded-full mx-auto mb-4 flex items-center justify-center">
-                          <div className="w-12 h-12 bg-white bg-opacity-50 rounded-lg"></div>
-                        </div>
-                        <p className="text-lg font-medium drop-shadow-lg">Proyecto {slideIndex + 1}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-
-          {/* Indicadores del carrusel */}
-          <div className="flex justify-center space-x-3">
-            {carouselImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`h-3 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? 'bg-blue-900 w-8' : 'bg-gray-300 w-3'
-                }`}
-              />
-            ))}
-          </div>
+        {/* Carrusel de imágenes - 3 columnas como en la referencia */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {carouselImages.map((image, index) => (
+            <div key={image.id} className="relative group">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={image.url}
+                  alt={`Proyecto arquitectónico ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
