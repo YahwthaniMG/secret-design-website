@@ -21,38 +21,38 @@ export default function Hero() {
   }, [carouselImages.length])
 
   return (
-    <section id="inicio" className="bg-gray-50 pt-8 pb-16">
+    <section id="inicio" className="bg-gray-50 pt-12 pb-20">
       <div className="container mx-auto px-6">
         
         {/* Mensaje principal */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl lg:text-6xl font-bold text-blue-900 mb-6 leading-tight">
+        <div className="text-center mb-20">
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
             Profesionales de la Construcción<br/>
             Experimentados
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
             Tenemos la experiencia para manejar su proyecto con confianza.
           </p>
-          <button className="bg-blue-900 text-white px-10 py-4 text-lg font-medium hover:bg-blue-800 transition-colors">
+          <button className="bg-blue-900 text-white px-10 py-4 text-lg font-medium hover:bg-blue-800 transition-colors rounded">
             Obtenga una Cotización Gratuita
           </button>
         </div>
 
-        {/* Carrusel de proyectos */}
-        <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            {carouselImages.slice(0, 3).map((image, index) => {
-              const slideIndex = (currentSlide + index) % carouselImages.length
+        {/* Carrusel de proyectos - Layout horizontal */}
+        <div className="relative max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {[0, 1, 2].map((offset) => {
+              const slideIndex = (currentSlide + offset) % carouselImages.length
               const slideImage = carouselImages[slideIndex]
               return (
-                <div key={slideIndex} className="relative">
-                  <div className={`bg-gradient-to-br ${slideImage.color} rounded-lg h-64 shadow-lg transition-all duration-500`}>
-                    <div className="w-full h-full flex items-center justify-center">
+                <div key={`slide-${slideIndex}`} className="relative">
+                  <div className={`bg-gradient-to-br ${slideImage.color} rounded-xl h-72 shadow-lg transition-all duration-700 transform hover:scale-105`}>
+                    <div className="w-full h-full flex items-center justify-center rounded-xl">
                       <div className="text-center text-white">
-                        <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                          <span className="text-2xl">🏗️</span>
+                        <div className="w-20 h-20 bg-white/30 rounded-full mx-auto mb-4 flex items-center justify-center">
+                          <div className="w-12 h-12 bg-white/40 rounded-lg"></div>
                         </div>
-                        <p className="text-sm font-medium opacity-90">Proyecto {slideIndex + 1}</p>
+                        <p className="text-lg font-medium">Proyecto {slideIndex + 1}</p>
                       </div>
                     </div>
                   </div>
@@ -62,13 +62,13 @@ export default function Hero() {
           </div>
 
           {/* Indicadores del carrusel */}
-          <div className="flex justify-center space-x-2">
+          <div className="flex justify-center space-x-3">
             {carouselImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  currentSlide === index ? 'bg-blue-900' : 'bg-gray-300'
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  currentSlide === index ? 'bg-blue-900 w-8' : 'bg-gray-300'
                 }`}
               />
             ))}

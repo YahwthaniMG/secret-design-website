@@ -119,4 +119,36 @@ export default function Contact() {
               </div>
 
               <div>
-                <h3 className="font-semibold text-
+                <h3 className="font-semibold text-gray-900 mb-2">Horarios de Atención</h3>
+                <div className="text-gray-600 space-y-1">
+                  <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                  <p>Sábado: 10:00 AM - 2:00 PM</p>
+                  <p>Domingo: Solo citas programadas</p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-2">Tiempo de Respuesta</h3>
+                <p className="text-gray-600">
+                  Nos comprometemos a responder todas las consultas en un máximo de 24 horas durante días hábiles.
+                </p>
+              </div>
+            </div>
+
+            {/* Elemento visual placeholder */}
+            <div className="mt-12">
+              <div className="bg-gradient-to-br from-blue-100 to-blue-300 rounded-lg h-64 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-2xl">📍</span>
+                  </div>
+                  <p className="text-sm font-medium opacity-90">Mapa de Ubicación</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
