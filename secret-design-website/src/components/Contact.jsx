@@ -94,8 +94,8 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Teléfono</h3>
                 <p className="text-gray-600">
-                  <a href="tel:+523312345678" className="hover:text-blue-900">
-                    +52 33 1234 5678
+                  <a href="tel:+523314683729" className="hover:text-blue-900">
+                    +52 33 1468 3729
                   </a>
                 </p>
               </div>
@@ -103,8 +103,8 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
                 <p className="text-gray-600">
-                  <a href="mailto:contacto@secretdesign.com" className="hover:text-blue-900">
-                    contacto@secretdesign.com
+                  <a href="mailto:cotizaciones@secretdesign.com" className="hover:text-blue-900">
+                    cotizaciones@secretdesign.com
                   </a>
                 </p>
               </div>
@@ -112,8 +112,8 @@ export default function Contact() {
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
                 <p className="text-gray-600">
-                  <a href="https://wa.me/523312345678" className="hover:text-blue-900">
-                    +52 33 1234 5678
+                  <a href="https://wa.me/523314683729" className="hover:text-blue-900">
+                    +52 33 1468 3729
                   </a>
                 </p>
               </div>

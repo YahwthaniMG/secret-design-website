@@ -8,9 +8,9 @@ export default function Hero() {
   
   // Imágenes reales de arquitectura minimalista como en tu referencia
   const carouselImages = [
-    { id: 1, url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 2, url: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { id: 3, url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
+    { id: 1, url: "/images/logo.jpg" },
+    { id: 2, url: "/images/logo.jpg" },
+    { id: 3, url: "/images/logo.jpg" }
   ]
 
   useEffect(() => {

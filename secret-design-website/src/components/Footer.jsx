@@ -8,10 +8,10 @@ export default function Footer() {
   
   // Imágenes para el carrusel inferior
   const footerImages = [
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "/images/logo.jpg",
+    "/images/logo.jpg",
+    "/images/logo.jpg",
+    "/images/logo.jpg"
   ]
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function Footer() {
               </div>
             </div>
             <h3 className="text-2xl font-bold text-gray-800 tracking-wide">SECRET DESIGN</h3>
-            <p className="text-sm text-gray-600 tracking-widest mt-1">ESLOGAN AQUÍ</p>
+            <p className="text-sm text-gray-600 tracking-widest mt-1">GERENCIA DE PROYECTOS</p>
             <div className="flex justify-center mt-3">
               <div className="flex space-x-1">
                 <div className="w-1 h-4 bg-gray-400"></div>
@@ -82,9 +82,14 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p className="text-gray-500 text-sm">
-            © 2023 por Nombre de la Empresa. Todos los derechos reservados.
-          </p>
+          <div className="text-center md:text-right text-gray-400">
+              <p className="text-lg mb-2">© 2025 Secret Design. Todos los derechos reservados</p>
+              <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
+                <a href="#" className="hover:text-white transition-colors">Política de Privacidad</a>
+                <a href="#" className="hover:text-white transition-colors">Términos y Condiciones</a>
+                <a href="#" className="hover:text-white transition-colors">Aviso Legal</a>
+              </div>
+          </div>
         </div>
       </div>
     </footer>

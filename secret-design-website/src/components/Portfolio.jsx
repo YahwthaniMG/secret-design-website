@@ -4,49 +4,58 @@ export default function Portfolio() {
       id: 1,
       title: "Título del Proyecto",
       description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-      imageUrl: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     },
     {
       id: 2,
       title: "Título del Proyecto",
       description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-      imageUrl: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     },
     {
       id: 3,
       title: "Título del Proyecto", 
       description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-      imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     },
     {
       id: 4,
       title: "Título del Proyecto",
       description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.", 
-      imageUrl: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     },
     {
       id: 5,
       title: "Título del Proyecto",
       description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-      imageUrl: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     },
     {
       id: 6,
       title: "Título del Proyecto",
       description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-      imageUrl: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     }
   ]
 
   return (
-    <section className="py-20 bg-gray-50 min-h-screen">
-      <div className="container mx-auto px-6">
+    <div className="min-h-screen bg-gray-50">
+      <div className="container mx-auto px-6 py-16">
         
-        {/* Grid de proyectos - 2x3 como en la referencia */}
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        {/* Título principal */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl lg:text-5xl font-bold text-blue-900">
+            Proyectos
+          </h1>
+        </div>
+        
+        {/* Grid de proyectos - 2 columnas desktop, 1 columna mobile */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20">
           {projects.map((project) => (
-            <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer group">
-              
+            <div 
+              key={project.id} 
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group"
+            >
               {/* Imagen del proyecto */}
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
@@ -57,18 +66,34 @@ export default function Portfolio() {
               </div>
 
               {/* Contenido del proyecto */}
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-blue-900 mb-4">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-sm">
                   {project.description}
                 </p>
               </div>
             </div>
           ))}
         </div>
+
+        {/* Sección de contacto final */}
+        <div className="text-center border-t border-gray-200 pt-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            ¿Estás listo para dar vida a tu proyecto de sueños?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Contáctanos hoy para discutir los objetivos de tu proyecto, solicitar una cotización, o programar una consulta.
+          </p>
+          <a 
+            href="/contacto"
+            className="inline-block bg-blue-900 text-white px-8 py-3 text-lg font-medium hover:bg-blue-800 transition-colors rounded"
+          >
+            Obtenga una Cotización Gratuita
+          </a>
+        </div>
       </div>
-    </section>
+    </div>
   )
 }

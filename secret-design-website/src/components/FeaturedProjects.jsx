@@ -4,19 +4,19 @@ export default function FeaturedProjects() {
       id: 1,
       title: "Proyecto 1",
       description: "Se necesita una breve descripción aquí, elaborando sobre el contexto, propósito o detalles relacionados con el tema que se describe.",
-      imageUrl: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     },
     {
       id: 2,
       title: "Proyecto 2", 
       description: "Se necesita una breve descripción aquí, elaborando sobre el contexto, propósito o detalles relacionados con el tema que se describe.",
-      imageUrl: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     },
     {
       id: 3,
       title: "Proyecto 3",
       description: "Se necesita una breve descripción aquí, elaborando sobre el contexto, propósito o detalles relacionados con el tema que se describe.", 
-      imageUrl: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/logo.jpg"
     }
   ]
 
