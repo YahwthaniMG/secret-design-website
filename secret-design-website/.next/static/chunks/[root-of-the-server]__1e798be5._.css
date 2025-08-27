@@ -158,8 +158,21 @@
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .container {
@@ -300,6 +313,10 @@
   opacity: .9;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: var(--tw-ease, ease);
@@ -360,6 +377,12 @@
     --tw-scale-y: 105%;
     --tw-scale-z: 105%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+}
+
+@media (hover: hover) {
+  .hover\:opacity-80:hover {
+    opacity: .8;
   }
 }
 
