@@ -1,80 +1,97 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "Proyecto Residencial 1",
-      description: "Descripción del proyecto va aquí. Detalles sobre el contexto, objetivos y resultados del diseño interior.",
+      title: "Residencia Moderna Los Altos",
+      description: "Diseño integral de interiores para una residencia familiar de 300m² en Zapopan. Proyecto que combina funcionalidad y elegancia con materiales de primera calidad.",
       imageUrl: "/images/proyecto/test.png"
     },
     {
       id: 2,
-      title: "Proyecto Comercial 2",
-      description: "Descripción del proyecto va aquí. Información sobre la gestión integral del proyecto arquitectónico.",
+      title: "Oficinas Corporativas Plaza Central",
+      description: "Remodelación completa de oficinas ejecutivas de 500m². Gestión integral del proyecto desde el diseño hasta la supervisión de obra.",
       imageUrl: "/images/proyecto/test.png"
     },
     {
       id: 3,
-      title: "Proyecto Oficinas 3", 
-      description: "Descripción del proyecto va aquí. Detalles del proceso de consultoría y diseño especializado.",
+      title: "Restaurante Gourmet Downtown", 
+      description: "Diseño y coordinación de espacios comerciales para restaurante de alta cocina. Proyecto que incluye diseño de mobiliario personalizado.",
       imageUrl: "/images/proyecto/test.png"
     },
     {
       id: 4,
-      title: "Proyecto Residencial 4",
-      description: "Descripción del proyecto va aquí. Información sobre renovación completa y supervisión de obra.", 
+      title: "Penthouse Luxury Providencia",
+      description: "Renovación completa de penthouse de lujo con vista panorámica. Supervisión de obra y coordinación de múltiples especialidades.", 
       imageUrl: "/images/proyecto/test.png"
     },
     {
       id: 5,
-      title: "Proyecto Comercial 5",
-      description: "Descripción del proyecto va aquí. Detalles sobre diseño 3D y coordinación de espacios.",
+      title: "Clínica Dental Especializada",
+      description: "Diseño de espacios médicos especializados con enfoque en funcionalidad y confort para pacientes. Incluye diseño 3D y renderizado.",
       imageUrl: "/images/proyecto/test.png"
     },
     {
       id: 6,
-      title: "Proyecto Villa 6",
-      description: "Descripción del proyecto va aquí. Información sobre styling, decoración y entrega final.",
+      title: "Casa de Campo Tlajomulco",
+      description: "Proyecto de casa de descanso familiar con diseño que integra espacios interiores y exteriores. Decoración y styling completo.",
+      imageUrl: "/images/proyecto/test.png"
+    },
+    {
+      id: 7,
+      title: "Boutique Hotel Centro Histórico",
+      description: "Diseño de interiores para hotel boutique de 12 habitaciones. Proyecto que respeta la arquitectura colonial integrando elementos contemporáneos.",
+      imageUrl: "/images/proyecto/test.png"
+    },
+    {
+      id: 8,
+      title: "Loft Industrial Americana",
+      description: "Transformación de espacio industrial en loft residencial moderno. Gestión integral incluyendo permisos y supervisión técnica.",
       imageUrl: "/images/proyecto/test.png"
     }
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-12">
+    <div className="portfolio-container">
+      <div className="container mx-auto py-16">
         
-        {/* Título principal */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-blue-900">
-            Proyectos
+        {/* Header Section */}
+        <div className="portfolio-header">
+          <h1 className="portfolio-title">
+            Nuestros Proyectos
           </h1>
+          <p className="portfolio-subtitle">
+            Cada proyecto cuenta una historia única. Descubre cómo transformamos espacios ordinarios en ambientes extraordinarios.
+          </p>
         </div>
         
-        {/* Grid responsivo de cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        {/* Projects Grid */}
+        <div className="portfolio-grid">
           {projects.map((project) => (
             <div 
               key={project.id} 
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer overflow-hidden max-w-sm mx-auto"
+              className="portfolio-card"
             >
-              {/* Contenedor de imagen con tamaño fijo */}
-              <div className="relative w-full h-48 overflow-hidden">
+              {/* Card Image */}
+              <div className="portfolio-card-image">
                 <Image 
                   src={project.imageUrl}
                   alt={project.title}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="portfolio-image"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                  loading="lazy"
                 />
               </div>
 
-              {/* Contenido del proyecto - altura fija para consistencia */}
-              <div className="p-4 h-32 flex flex-col">
-                <h3 className="text-lg font-bold text-blue-900 mb-2 line-clamp-2">
+              {/* Card Content */}
+              <div className="portfolio-card-content">
+                <h3 className="portfolio-card-title">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed flex-1 overflow-hidden">
+                <p className="portfolio-card-description">
                   {project.description}
                 </p>
               </div>
@@ -82,20 +99,20 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Sección de contacto final */}
-        <div className="text-center mt-20 border-t border-gray-200 pt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            ¿Estás listo para dar vida a tu proyecto de sueños?
+        {/* Contact Section */}
+        <div className="portfolio-contact-section">
+          <h2 className="portfolio-contact-title">
+            ¿Tienes un proyecto en mente?
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Contáctanos hoy para discutir los objetivos de tu proyecto, solicitar una cotización, o programar una consulta.
+          <p className="portfolio-contact-description">
+            Estamos listos para hacer realidad tu visión. Contáctanos para una consulta personalizada y cotización gratuita.
           </p>
-          <a 
+          <Link 
             href="/contacto"
-            className="inline-block bg-blue-900 text-white px-8 py-3 text-lg font-medium hover:bg-blue-800 transition-colors rounded"
+            className="portfolio-contact-button"
           >
-            Obtenga una Cotización Gratuita
-          </a>
+            Solicitar Cotización Gratuita
+          </Link>
         </div>
       </div>
     </div>
