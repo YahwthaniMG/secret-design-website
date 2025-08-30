@@ -50,134 +50,136 @@ __turbopack_context__.s([
     ()=>Portfolio
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
+;
 ;
 function Portfolio() {
     const projects = [
         {
             id: 1,
-            title: "Título del Proyecto",
-            description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-            imageUrl: "/images/logo.jpg"
+            title: "Proyecto Residencial 1",
+            description: "Descripción del proyecto va aquí. Detalles sobre el contexto, objetivos y resultados del diseño interior.",
+            imageUrl: "/images/proyecto/test.png"
         },
         {
             id: 2,
-            title: "Título del Proyecto",
-            description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-            imageUrl: "/images/logo.jpg"
+            title: "Proyecto Comercial 2",
+            description: "Descripción del proyecto va aquí. Información sobre la gestión integral del proyecto arquitectónico.",
+            imageUrl: "/images/proyecto/test.png"
         },
         {
             id: 3,
-            title: "Título del Proyecto",
-            description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-            imageUrl: "/images/logo.jpg"
+            title: "Proyecto Oficinas 3",
+            description: "Descripción del proyecto va aquí. Detalles del proceso de consultoría y diseño especializado.",
+            imageUrl: "/images/proyecto/test.png"
         },
         {
             id: 4,
-            title: "Título del Proyecto",
-            description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-            imageUrl: "/images/logo.jpg"
+            title: "Proyecto Residencial 4",
+            description: "Descripción del proyecto va aquí. Información sobre renovación completa y supervisión de obra.",
+            imageUrl: "/images/proyecto/test.png"
         },
         {
             id: 5,
-            title: "Título del Proyecto",
-            description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-            imageUrl: "/images/logo.jpg"
+            title: "Proyecto Comercial 5",
+            description: "Descripción del proyecto va aquí. Detalles sobre diseño 3D y coordinación de espacios.",
+            imageUrl: "/images/proyecto/test.png"
         },
         {
             id: 6,
-            title: "Título del Proyecto",
-            description: "Escribe una descripción del proyecto aquí. Incluye detalles y algo de información de antecedentes.",
-            imageUrl: "/images/logo.jpg"
+            title: "Proyecto Villa 6",
+            description: "Descripción del proyecto va aquí. Información sobre styling, decoración y entrega final.",
+            imageUrl: "/images/proyecto/test.png"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-gray-50",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-6 py-16",
+            className: "container mx-auto px-4 py-12",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center mb-16",
+                    className: "text-center mb-12",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-4xl lg:text-5xl font-bold text-blue-900",
+                        className: "text-4xl font-bold text-blue-900",
                         children: "Proyectos"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Portfolio.jsx",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Portfolio.jsx",
-                    lineNumber: 46,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20",
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto",
                     children: projects.map((project)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group",
+                            className: "bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer overflow-hidden max-w-sm mx-auto",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "aspect-[4/3] overflow-hidden",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    className: "relative w-full h-48 overflow-hidden",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                         src: project.imageUrl,
                                         alt: project.title,
-                                        className: "object-cover group-hover:scale-105 transition-transform duration-300",
-                                        width: 100,
-                                        height: 100
+                                        fill: true,
+                                        className: "object-cover hover:scale-105 transition-transform duration-300",
+                                        sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Portfolio.jsx",
-                                        lineNumber: 61,
+                                        lineNumber: 63,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Portfolio.jsx",
-                                    lineNumber: 60,
+                                    lineNumber: 62,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-6",
+                                    className: "p-4 h-32 flex flex-col",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold text-blue-900 mb-3",
+                                            className: "text-lg font-bold text-blue-900 mb-2 line-clamp-2",
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Portfolio.jsx",
-                                            lineNumber: 72,
+                                            lineNumber: 74,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 leading-relaxed text-sm",
+                                            className: "text-gray-600 text-sm leading-relaxed flex-1 overflow-hidden",
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Portfolio.jsx",
-                                            lineNumber: 75,
+                                            lineNumber: 77,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Portfolio.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 73,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, project.id, true, {
                             fileName: "[project]/src/components/Portfolio.jsx",
-                            lineNumber: 55,
+                            lineNumber: 57,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/Portfolio.jsx",
-                    lineNumber: 53,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center border-t border-gray-200 pt-16",
+                    className: "text-center mt-20 border-t border-gray-200 pt-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-3xl font-bold text-gray-800 mb-6",
                             children: "¿Estás listo para dar vida a tu proyecto de sueños?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Portfolio.jsx",
-                            lineNumber: 85,
+                            lineNumber: 87,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -185,7 +187,7 @@ function Portfolio() {
                             children: "Contáctanos hoy para discutir los objetivos de tu proyecto, solicitar una cotización, o programar una consulta."
                         }, void 0, false, {
                             fileName: "[project]/src/components/Portfolio.jsx",
-                            lineNumber: 88,
+                            lineNumber: 90,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -194,24 +196,24 @@ function Portfolio() {
                             children: "Obtenga una Cotización Gratuita"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Portfolio.jsx",
-                            lineNumber: 91,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Portfolio.jsx",
-                    lineNumber: 84,
+                    lineNumber: 86,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Portfolio.jsx",
-            lineNumber: 43,
+            lineNumber: 45,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Portfolio.jsx",
-        lineNumber: 42,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 }
