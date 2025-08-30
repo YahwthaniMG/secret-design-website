@@ -61,7 +61,9 @@ export default function Portfolio() {
                 <img 
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  width={100}
+                  height={100}
                 />
               </div>
 

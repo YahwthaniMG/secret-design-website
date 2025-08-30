@@ -120,7 +120,9 @@ function Portfolio() {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                         src: project.imageUrl,
                                         alt: project.title,
-                                        className: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                        className: "object-cover group-hover:scale-105 transition-transform duration-300",
+                                        width: 100,
+                                        height: 100
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Portfolio.jsx",
                                         lineNumber: 61,
@@ -139,7 +141,7 @@ function Portfolio() {
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Portfolio.jsx",
-                                            lineNumber: 70,
+                                            lineNumber: 72,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -147,13 +149,13 @@ function Portfolio() {
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Portfolio.jsx",
-                                            lineNumber: 73,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Portfolio.jsx",
-                                    lineNumber: 69,
+                                    lineNumber: 71,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -175,7 +177,7 @@ function Portfolio() {
                             children: "¿Estás listo para dar vida a tu proyecto de sueños?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Portfolio.jsx",
-                            lineNumber: 83,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -183,7 +185,7 @@ function Portfolio() {
                             children: "Contáctanos hoy para discutir los objetivos de tu proyecto, solicitar una cotización, o programar una consulta."
                         }, void 0, false, {
                             fileName: "[project]/src/components/Portfolio.jsx",
-                            lineNumber: 86,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -192,13 +194,13 @@ function Portfolio() {
                             children: "Obtenga una Cotización Gratuita"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Portfolio.jsx",
-                            lineNumber: 89,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Portfolio.jsx",
-                    lineNumber: 82,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this)
             ]
