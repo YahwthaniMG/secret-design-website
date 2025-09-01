@@ -58,6 +58,7 @@ export default function Hero() {
           </p>
 
           {/* Estadísticas */}
+          {/*
           <div className="hero-stats max-w-2xl mx-auto mb-16">
             <div className="stat-item">
               <div className="stat-number">15+</div>
@@ -76,6 +77,7 @@ export default function Hero() {
               <div className="stat-label">Soporte</div>
             </div>
           </div>
+          */}
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link 
