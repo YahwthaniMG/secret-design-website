@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Portfolio() {
@@ -72,17 +71,14 @@ export default function Portfolio() {
           {projects.map((project) => (
             <div 
               key={project.id} 
-              className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl card-hover cursor-pointer max-w-sm mx-auto"
+              className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer max-w-sm mx-auto"
             >
               {/* Card Image Container - Altura fija */}
               <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
-                <Image 
+                <img 
                   src={project.imageUrl}
                   alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-300 card-image"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
 
