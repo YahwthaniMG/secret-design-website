@@ -29,7 +29,7 @@ export default function Hero() {
   ]
 
   return (
-    <div className="hero-gradient hero-pattern min-h-screen relative overflow-hidden">
+    <section className="hero-gradient hero-pattern relative overflow-hidden">
       {/* Elementos flotantes decorativos */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="floating-element absolute top-20 left-10 w-20 h-20 bg-blue-200/30 rounded-full blur-xl"></div>
@@ -192,6 +192,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
