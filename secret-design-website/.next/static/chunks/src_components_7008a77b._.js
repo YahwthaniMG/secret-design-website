@@ -32,20 +32,20 @@ function Header() {
         className: "w-full bg-white shadow-lg border-b border-gray-300 sticky top-0 z-50",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl mx-auto px-4 py-6",
+                className: "max-w-7xl mx-auto px-6 py-4",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center justify-between",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center space-x-4",
+                            className: "flex items-center space-x-3",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative w-14 h-14 flex-shrink-0",
+                                    className: "relative w-12 h-12 flex-shrink-0",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/images/icon.png",
                                         alt: "Secret Design Logo",
-                                        width: 70,
-                                        height: 70,
+                                        width: 48,
+                                        height: 48,
                                         className: "rounded-full object-cover border-2 border-gray-200",
                                         priority: true
                                     }, void 0, false, {
@@ -67,35 +67,35 @@ function Header() {
                                                 className: "flex space-x-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-4 bg-gray-500"
+                                                        className: "w-1 h-3 bg-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 44,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-6 bg-gray-700"
+                                                        className: "w-1 h-5 bg-gray-700"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 45,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-5 bg-gray-600"
+                                                        className: "w-1 h-4 bg-gray-600"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 46,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-7 bg-gray-800"
+                                                        className: "w-1 h-6 bg-gray-800"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 47,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-4 bg-gray-500"
+                                                        className: "w-1 h-3 bg-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 48,
@@ -113,7 +113,7 @@ function Header() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                            className: "text-xl md:text-2xl font-bold text-gray-900 tracking-wide leading-none",
+                                            className: "text-lg md:text-xl font-bold text-gray-900 tracking-wide leading-none",
                                             children: "SECRET DESIGN"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Header.jsx",
@@ -121,7 +121,7 @@ function Header() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-gray-600 tracking-widest uppercase leading-none",
+                                            className: "text-xs text-gray-600 tracking-widest uppercase leading-none",
                                             children: "GERENCIA DE PROYECTOS"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Header.jsx",
@@ -134,35 +134,35 @@ function Header() {
                                                 className: "flex space-x-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-4 bg-gray-500"
+                                                        className: "w-1 h-3 bg-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 65,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-6 bg-gray-700"
+                                                        className: "w-1 h-5 bg-gray-700"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 66,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-5 bg-gray-600"
+                                                        className: "w-1 h-4 bg-gray-600"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 67,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-7 bg-gray-800"
+                                                        className: "w-1 h-6 bg-gray-800"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 68,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-1 h-4 bg-gray-500"
+                                                        className: "w-1 h-3 bg-gray-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Header.jsx",
                                                         lineNumber: 69,
@@ -192,12 +192,11 @@ function Header() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                            className: "hidden lg:flex items-center space-x-8",
+                            className: "hidden md:flex items-center space-x-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: "/",
-                                    className: "text-lg transition-all duration-200 px-4 py-2 rounded-lg ".concat(pathname === '/' ? 'text-black font-bold' : 'text-black font-medium hover:font-semibold'),
-                                    onClick: closeMenu,
+                                    className: "text-base transition-all duration-200 px-3 py-2 ".concat(pathname === '/' ? 'text-black font-bold' : 'text-black font-medium hover:font-semibold'),
                                     children: "Inicio"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Header.jsx",
@@ -206,22 +205,20 @@ function Header() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: "/portfolio",
-                                    className: "text-lg transition-all duration-200 px-4 py-2 rounded-lg ".concat(pathname === '/portfolio' ? 'text-black font-bold' : 'text-black font-medium hover:font-semibold'),
-                                    onClick: closeMenu,
+                                    className: "text-base transition-all duration-200 px-3 py-2 ".concat(pathname === '/portfolio' ? 'text-black font-bold' : 'text-black font-medium hover:font-semibold'),
                                     children: "Portafolio"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Header.jsx",
-                                    lineNumber: 88,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: "/contacto",
-                                    className: "text-lg transition-all duration-200 px-4 py-2 rounded-lg ".concat(pathname === '/contacto' ? 'text-black font-bold' : 'text-black font-medium hover:font-semibold'),
-                                    onClick: closeMenu,
+                                    className: "text-base transition-all duration-200 px-3 py-2 ".concat(pathname === '/contacto' ? 'text-black font-bold' : 'text-black font-medium hover:font-semibold'),
                                     children: "Contacto"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Header.jsx",
-                                    lineNumber: 99,
+                                    lineNumber: 97,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -232,41 +229,41 @@ function Header() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: toggleMenu,
-                            className: "lg:hidden flex items-center justify-center w-10 h-10 rounded-md hover:bg-gray-100 transition-colors duration-200",
+                            className: "md:hidden flex items-center justify-center w-8 h-8 rounded-md hover:bg-gray-100 transition-colors duration-200",
                             "aria-label": "Abrir menú",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex flex-col space-y-1",
+                                className: "flex flex-col justify-center items-center space-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-6 h-0.5 bg-gray-800 transition-transform duration-300 ".concat(isMenuOpen ? 'rotate-45 translate-y-2' : '')
+                                        className: "w-5 h-0.5 bg-gray-800 transition-all duration-300 ".concat(isMenuOpen ? 'rotate-45 translate-y-1.5' : '')
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Header.jsx",
+                                        lineNumber: 116,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-5 h-0.5 bg-gray-800 transition-opacity duration-300 ".concat(isMenuOpen ? 'opacity-0' : '')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.jsx",
                                         lineNumber: 119,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-6 h-0.5 bg-gray-800 transition-opacity duration-300 ".concat(isMenuOpen ? 'opacity-0' : '')
+                                        className: "w-5 h-0.5 bg-gray-800 transition-all duration-300 ".concat(isMenuOpen ? '-rotate-45 -translate-y-1.5' : '')
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Header.jsx",
                                         lineNumber: 122,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-6 h-0.5 bg-gray-800 transition-transform duration-300 ".concat(isMenuOpen ? '-rotate-45 -translate-y-2' : '')
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Header.jsx",
-                                        lineNumber: 125,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Header.jsx",
-                                lineNumber: 118,
+                                lineNumber: 115,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Header.jsx",
-                            lineNumber: 113,
+                            lineNumber: 110,
                             columnNumber: 11
                         }, this)
                     ]
@@ -280,51 +277,51 @@ function Header() {
                 lineNumber: 22,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "lg:hidden bg-white border-t border-gray-200 transition-all duration-300 ease-in-out ".concat(isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0', " overflow-hidden"),
+            isMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "md:hidden bg-white border-t border-gray-200 shadow-lg",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                    className: "px-4 py-6 space-y-4",
+                    className: "px-6 py-4 space-y-2",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/",
-                            className: "block text-lg transition-all duration-200 px-4 py-3 rounded-lg ".concat(pathname === '/' ? 'text-black font-bold bg-gray-50' : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'),
+                            className: "block text-base transition-all duration-200 px-3 py-3 rounded-lg ".concat(pathname === '/' ? 'text-black font-bold bg-gray-50' : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'),
                             onClick: closeMenu,
                             children: "Inicio"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Header.jsx",
-                            lineNumber: 138,
-                            columnNumber: 11
+                            lineNumber: 134,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/portfolio",
-                            className: "block text-lg transition-all duration-200 px-4 py-3 rounded-lg ".concat(pathname === '/portfolio' ? 'text-black font-bold bg-gray-50' : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'),
+                            className: "block text-base transition-all duration-200 px-3 py-3 rounded-lg ".concat(pathname === '/portfolio' ? 'text-black font-bold bg-gray-50' : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'),
                             onClick: closeMenu,
                             children: "Portafolio"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Header.jsx",
-                            lineNumber: 149,
-                            columnNumber: 11
+                            lineNumber: 145,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/contacto",
-                            className: "block text-lg transition-all duration-200 px-4 py-3 rounded-lg ".concat(pathname === '/contacto' ? 'text-black font-bold bg-gray-50' : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'),
+                            className: "block text-base transition-all duration-200 px-3 py-3 rounded-lg ".concat(pathname === '/contacto' ? 'text-black font-bold bg-gray-50' : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'),
                             onClick: closeMenu,
                             children: "Contacto"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Header.jsx",
-                            lineNumber: 160,
-                            columnNumber: 11
+                            lineNumber: 156,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Header.jsx",
-                    lineNumber: 137,
-                    columnNumber: 9
+                    lineNumber: 133,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Header.jsx",
-                lineNumber: 134,
-                columnNumber: 7
+                lineNumber: 132,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
