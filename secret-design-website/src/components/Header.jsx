@@ -109,7 +109,7 @@ export default function Header() {
           {/* Botón hamburguesa - Solo visible en móvil */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden flex items-center justify-center w-16 h-16 rounded-md hover:bg-gray-100 transition-colors duration-200"
+            className="md:hidden flex items-center justify-center w-8 h-8 rounded-md hover:bg-gray-100 transition-colors duration-200"
             aria-label="Abrir menú"
           >
             <div className="flex flex-col justify-center items-center space-y-1">
