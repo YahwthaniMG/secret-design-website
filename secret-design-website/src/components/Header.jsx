@@ -48,7 +48,7 @@ export default function Header() {
               
               {/* Eslogan */}
               <p className="text-xs text-gray-600 tracking-widest uppercase leading-none">
-                ESLOGAN AQUÍ
+                GERENCIA DE PROYECTOS
               </p>
               
               {/* Decoración inferior */}

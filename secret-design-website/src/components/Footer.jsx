@@ -6,42 +6,11 @@ import Link from 'next/link'
 export default function Footer() {
   const [currentSlide, setCurrentSlide] = useState(0)
   
-  // Imágenes para el carrusel inferior
-  const footerImages = [
-    "/images/logo.jpg",
-    "/images/logo.jpg",
-    "/images/logo.jpg",
-    "/images/logo.jpg"
-  ]
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % footerImages.length)
-    }, 3500)
-    return () => clearInterval(timer)
-  }, [footerImages.length])
 
   return (
     <footer className="bg-gray-50 py-16">
       <div className="container mx-auto px-6">
-        
-        {/* Carrusel de imágenes inferior */}
-        <div className="mb-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {footerImages.map((imageUrl, index) => (
-              <div key={index} className="relative group">
-                <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-md">
-                  <img 
-                    src={imageUrl}
-                    alt={`Imagen ${index + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Mensaje de contacto */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
