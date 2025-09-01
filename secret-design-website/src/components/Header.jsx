@@ -10,14 +10,14 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="w-full bg-white shadow-md border-b border-gray-200 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
+    <header className="header-container">
+      <div className="header-content">
+        <div className="header-flex">
           
-          {/* Logo y nombre - lado izquierdo - NO clickeable */}
-          <div className="flex items-center space-x-3">
+          {/* Logo y nombre - lado izquierdo */}
+          <div className="logo-section">
             {/* Logo de imagen */}
-            <div className="relative w-12 h-12 flex-shrink-0">
+            <div className="logo-image-container">
               <Image 
                 src="/images/icon.png" 
                 alt="Secret Design Logo" 
@@ -29,69 +29,69 @@ export default function Header() {
             </div>
             
             {/* Texto del logo con decoraciones */}
-            <div className="flex flex-col">
+            <div className="logo-text-container">
               {/* Decoración superior */}
               <div className="flex justify-start mb-1">
-                <div className="flex space-x-1">
-                  <div className="w-1 h-3 bg-gray-500"></div>
-                  <div className="w-1 h-5 bg-gray-700"></div>
-                  <div className="w-1 h-4 bg-gray-600"></div>
-                  <div className="w-1 h-6 bg-gray-800"></div>
-                  <div className="w-1 h-3 bg-gray-500"></div>
+                <div className="logo-decoration">
+                  <div className="logo-bar h-3"></div>
+                  <div className="logo-bar h-5 bg-gray-700"></div>
+                  <div className="logo-bar h-4 bg-gray-600"></div>
+                  <div className="logo-bar h-6 bg-gray-800"></div>
+                  <div className="logo-bar h-3"></div>
                 </div>
               </div>
               
               {/* Nombre principal */}
-              <h1 className="text-lg md:text-xl font-bold text-gray-900 tracking-wide leading-none">
+              <h1 className="logo-title">
                 SECRET DESIGN
               </h1>
               
               {/* Eslogan */}
-              <p className="text-xs text-gray-600 tracking-widest uppercase leading-none">
+              <p className="logo-subtitle">
                 GERENCIA DE PROYECTOS
               </p>
               
               {/* Decoración inferior */}
               <div className="flex justify-start mt-1">
-                <div className="flex space-x-1">
-                  <div className="w-1 h-3 bg-gray-500"></div>
-                  <div className="w-1 h-5 bg-gray-700"></div>
-                  <div className="w-1 h-4 bg-gray-600"></div>
-                  <div className="w-1 h-6 bg-gray-800"></div>
-                  <div className="w-1 h-3 bg-gray-500"></div>
+                <div className="logo-decoration">
+                  <div className="logo-bar h-3"></div>
+                  <div className="logo-bar h-5 bg-gray-700"></div>
+                  <div className="logo-bar h-4 bg-gray-600"></div>
+                  <div className="logo-bar h-6 bg-gray-800"></div>
+                  <div className="logo-bar h-3"></div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Navegación desktop - lado derecho - SIEMPRE VISIBLE */}
-          <nav className="flex items-center space-x-6">
+          {/* Navegación desktop - lado derecho */}
+          <nav className="nav-container">
             <Link 
               href="/" 
-              className={`text-base font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+              className={`nav-link ${
                 pathname === '/' 
-                  ? 'text-blue-900 bg-blue-50 border border-blue-200' 
-                  : 'text-gray-700 hover:text-blue-700 hover:bg-gray-50 border border-transparent'
+                  ? 'nav-link-active' 
+                  : 'nav-link-inactive'
               }`}
             >
               Inicio
             </Link>
             <Link 
               href="/portfolio" 
-              className={`text-base font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+              className={`nav-link ${
                 pathname === '/portfolio' 
-                  ? 'text-blue-900 bg-blue-50 border border-blue-200' 
-                  : 'text-gray-700 hover:text-blue-700 hover:bg-gray-50 border border-transparent'
+                  ? 'nav-link-active' 
+                  : 'nav-link-inactive'
               }`}
             >
               Portafolio
             </Link>
             <Link 
               href="/contacto" 
-              className={`text-base font-medium transition-all duration-200 px-3 py-2 rounded-lg ${
+              className={`nav-link ${
                 pathname === '/contacto' 
-                  ? 'text-blue-900 bg-blue-50 border border-blue-200' 
-                  : 'text-gray-700 hover:text-blue-700 hover:bg-gray-50 border border-transparent'
+                  ? 'nav-link-active' 
+                  : 'nav-link-inactive'
               }`}
             >
               Contacto
