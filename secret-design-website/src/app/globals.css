@@ -40,4 +40,90 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  }
+
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+  }
+
+  .service-card {
+    @apply bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20;
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    @apply shadow-2xl;
+  }
+
+  .service-icon {
+    @apply w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-4;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  }
+
+  .hero-title {
+    background: linear-gradient(135deg, #1e40af 0%, #3730a3 50%, #1e3a8a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .philosophy-card {
+    @apply bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg border border-blue-100;
+  }
+
+  .decorative-line {
+    @apply h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-600 rounded-full;
+  }
+
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .floating-element:nth-child(2) {
+    animation-delay: -2s;
+  }
+
+  .floating-element:nth-child(3) {
+    animation-delay: -4s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .section-divider {
+    @apply relative py-8;
+  }
+
+  .section-divider::before {
+    content: '';
+    @apply absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full;
+  }
+
+  .hero-stats {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-6 text-center;
+  }
+
+  .stat-item {
+    @apply bg-white/70 backdrop-blur-sm rounded-xl p-4 shadow-md;
+  }
+
+  .stat-number {
+    @apply text-2xl font-bold text-blue-900 mb-1;
+  }
+
+  .stat-label {
+    @apply text-sm text-gray-600 uppercase tracking-wide;
+  }
 }
