@@ -53,41 +53,33 @@ export default function Portfolio() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-16">
+    <div className="portfolio-container">
+      <div className="portfolio-wrapper">
         
-        {/* Header Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
-            Nuestros Proyectos
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <div className="portfolio-header">
+          <p className="portfolio-subtitle">
             Cada proyecto cuenta una historia única. Descubre cómo transformamos espacios ordinarios en ambientes extraordinarios.
           </p>
         </div>
         
-        {/* Projects Grid - Responsive */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto mb-20">
+        <div className="portfolio-grid">
           {projects.map((project) => (
             <div 
               key={project.id} 
-              className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 cursor-pointer max-w-sm mx-auto"
+              className="portfolio-card"
             >
-              {/* Card Image Container - Altura fija */}
-              <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
+              <div className="portfolio-card-image">
                 <img 
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
 
-              {/* Card Content - Altura consistente */}
-              <div className="p-5 h-32 flex flex-col">
-                <h3 className="text-lg font-bold text-blue-900 mb-3 line-clamp-2 leading-tight">
+              <div className="portfolio-card-content">
+                <h3 className="portfolio-card-title line-clamp-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed flex-1 line-clamp-3">
+                <p className="portfolio-card-description line-clamp-3">
                   {project.description}
                 </p>
               </div>
@@ -95,19 +87,18 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Contact Section */}
-        <div className="text-center mt-20 border-t border-gray-200 pt-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+        <div className="portfolio-contact">
+          <h2 className="portfolio-contact-title">
             ¿Tienes un proyecto en mente?
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Estamos listos para hacer realidad tu visión. Contáctanos para una consulta personalizada y cotización gratuita.
+          <p className="portfolio-contact-text">
+            Estamos listos para hacer realidad tu visión. Contáctanos para una consulta personalizada.
           </p>
           <Link 
             href="/contacto"
-            className="inline-block bg-blue-900 text-white px-8 py-3 text-lg font-medium hover:bg-blue-800 transition-colors rounded-lg"
+            className="portfolio-contact-button"
           >
-            Solicitar Cotización Gratuita
+            Contáctanos 
           </Link>
         </div>
       </div>
