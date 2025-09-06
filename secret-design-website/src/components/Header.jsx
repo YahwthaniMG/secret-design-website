@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { Home, User, Briefcase, Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -72,97 +73,101 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Navegación desktop - Solo visible en desktop */}
-          <nav className="hidden md:flex items-center space-x-6">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
             <Link 
               href="/" 
-              className={`text-base transition-all duration-200 px-3 py-2 ${
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-50 ${
                 pathname === '/' 
-                  ? 'text-black font-bold' 
-                  : 'text-black font-medium hover:font-semibold'
+                  ? 'text-blue-600 bg-blue-50 font-semibold' 
+                  : 'text-gray-700 hover:text-blue-600'
               }`}
             >
-              Inicio
+              <Home size={20} />
+              <span>Inicio</span>
             </Link>
+            
             <Link 
               href="/portfolio" 
-              className={`text-base transition-all duration-200 px-3 py-2 ${
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-50 ${
                 pathname === '/portfolio' 
-                  ? 'text-black font-bold' 
-                  : 'text-black font-medium hover:font-semibold'
+                  ? 'text-blue-600 bg-blue-50 font-semibold' 
+                  : 'text-gray-700 hover:text-blue-600'
               }`}
             >
-              Portafolio
+              <Briefcase size={20} />
+              <span>Portafolio</span>
             </Link>
+            
             <Link 
               href="/contacto" 
-              className={`text-base transition-all duration-200 px-3 py-2 ${
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-50 ${
                 pathname === '/contacto' 
-                  ? 'text-black font-bold' 
-                  : 'text-black font-medium hover:font-semibold'
+                  ? 'text-blue-600 bg-blue-50 font-semibold' 
+                  : 'text-gray-700 hover:text-blue-600'
               }`}
             >
-              Contacto
+              <User size={20} />
+              <span>Contacto</span>
             </Link>
           </nav>
 
-          {/* Botón hamburguesa - Solo visible en móvil */}
-          <button 
+          {/* Mobile Menu Button */}
+          <button
             onClick={toggleMenu}
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-md hover:bg-gray-100 transition-colors duration-200"
-            aria-label="Abrir menú"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            aria-label="Toggle menu"
           >
-            <div className="flex flex-col justify-center items-center w-6 h-6 relative">
-              <div className={`w-5 h-0.5 bg-gray-800 rounded-full transition-all duration-300 absolute ${
-                isMenuOpen ? 'rotate-45 translate-y-0' : '-translate-y-1.5'
-              }`}></div>
-              <div className={`w-5 h-0.5 bg-gray-800 rounded-full transition-all duration-300 absolute ${
-                isMenuOpen ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
-              }`}></div>
-              <div className={`w-5 h-0.5 bg-gray-800 rounded-full transition-all duration-300 absolute ${
-                isMenuOpen ? '-rotate-45 translate-y-0' : 'translate-y-1.5'
-              }`}></div>
-            </div>
+            {isMenuOpen ? (
+              <X size={24} className="text-gray-700" />
+            ) : (
+              <Menu size={24} className="text-gray-700" />
+            )}
           </button>
         </div>
       </div>
 
-      {/* Menú móvil desplegable - Solo se muestra cuando está abierto */}
+      {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <nav className="px-6 py-4 space-y-2">
             <Link 
               href="/" 
-              className={`block text-base transition-all duration-200 px-3 py-3 rounded-lg ${
+              className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 ${
                 pathname === '/' 
-                  ? 'text-black font-bold bg-gray-50' 
-                  : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'
+                  ? 'text-blue-600 bg-blue-50 font-semibold' 
+                  : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'
               }`}
               onClick={closeMenu}
             >
-              Inicio
+              <Home size={20} />
+              <span>Inicio</span>
             </Link>
+            
             <Link 
               href="/portfolio" 
-              className={`block text-base transition-all duration-200 px-3 py-3 rounded-lg ${
+              className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 ${
                 pathname === '/portfolio' 
-                  ? 'text-black font-bold bg-gray-50' 
-                  : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'
+                  ? 'text-blue-600 bg-blue-50 font-semibold' 
+                  : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'
               }`}
               onClick={closeMenu}
             >
-              Portafolio
+              <Briefcase size={20} />
+              <span>Portafolio</span>
             </Link>
+            
             <Link 
               href="/contacto" 
-              className={`block text-base transition-all duration-200 px-3 py-3 rounded-lg ${
+              className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 ${
                 pathname === '/contacto' 
-                  ? 'text-black font-bold bg-gray-50' 
-                  : 'text-black font-medium hover:bg-gray-50 hover:font-semibold'
+                  ? 'text-blue-600 bg-blue-50 font-semibold' 
+                  : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'
               }`}
               onClick={closeMenu}
             >
-              Contacto
+              <User size={20} />
+              <span>Contacto</span>
             </Link>
           </nav>
         </div>
