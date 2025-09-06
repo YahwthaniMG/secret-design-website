@@ -234,16 +234,8 @@
   width: 100%;
 }
 
-.flex-1 {
-  flex: 1;
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 .resize-none {
@@ -696,6 +688,37 @@
 
   .portfolio-contact-button:hover {
     background-color: #1e40af;
+  }
+
+  .portfolio-card.expanded {
+    background: #f8fafc;
+    border: 2px solid #3b82f6;
+    grid-column: 1 / -1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .portfolio-card.expanded .portfolio-card-image {
+    height: 16rem;
+  }
+
+  .portfolio-card.expanded .portfolio-card-content {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .portfolio-card.expanded .portfolio-card-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .portfolio-card.expanded .portfolio-card-description {
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: block;
+    overflow: visible;
   }
 }
 
