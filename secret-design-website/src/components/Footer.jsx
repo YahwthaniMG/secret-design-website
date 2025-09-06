@@ -7,22 +7,6 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 py-16">
       <div className="container mx-auto px-6">
-        {/* Mensaje de contacto */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
-            ¿Estás listo para dar vida a tu proyecto de sueños?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Contáctanos hoy para discutir los objetivos de tu proyecto, solicitar una cotización, o programar una consulta.
-          </p>
-          <Link 
-            href="/contacto"
-            className="inline-block bg-blue-900 text-white px-8 py-3 text-lg font-medium hover:bg-blue-800 transition-colors rounded-lg"
-          >
-            Obtenga una Cotización Gratuita
-          </Link>
-        </div>
-
         {/* Logo y copyright */}
         <div className="text-center border-t border-gray-200 pt-12">
           <div className="mb-6">

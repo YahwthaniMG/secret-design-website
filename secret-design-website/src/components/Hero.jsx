@@ -41,11 +41,6 @@ export default function Hero() {
         
         {/* Hero Principal */}
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="mb-8">
-            <span className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              Estudio de Arquitectura Profesional
-            </span>
-          </div>
           
           <h1 className="hero-title text-5xl lg:text-7xl font-bold mb-8 leading-tight">
             Gerencia de Proyectos<br/>
@@ -56,43 +51,6 @@ export default function Hero() {
             Integramos arquitectura e ingenierías bajo una misma dirección, 
             garantizando soluciones claras, eficientes y de alto valor estético y técnico.
           </p>
-
-          {/* Estadísticas */}
-          {/*
-          <div className="hero-stats max-w-2xl mx-auto mb-16">
-            <div className="stat-item">
-              <div className="stat-number">15+</div>
-              <div className="stat-label">Años Experiencia</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">200+</div>
-              <div className="stat-label">Proyectos</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">100%</div>
-              <div className="stat-label">Satisfacción</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Soporte</div>
-            </div>
-          </div>
-          */}
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link 
-              href="/contacto"
-              className="bg-blue-900 text-white px-10 py-4 rounded-xl text-lg font-semibold hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Solicitar Cotización Gratuita
-            </Link>
-            <Link 
-              href="/portfolio"
-              className="border-2 border-blue-900 text-blue-900 px-10 py-4 rounded-xl text-lg font-semibold hover:bg-blue-900 hover:text-white transition-all duration-300"
-            >
-              Ver Nuestros Proyectos
-            </Link>
-          </div>
         </div>
 
         {/* Quiénes Somos */}
@@ -187,7 +145,7 @@ export default function Hero() {
                   href="tel:+523314683729"
                   className="border-2 border-blue-900 text-blue-900 px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-50 transition-all duration-300"
                 >
-                  Llamar: +52 33 1468 3729
+                  Llamar: +52 33 1410 6649
                 </a>
               </div>
             </div>

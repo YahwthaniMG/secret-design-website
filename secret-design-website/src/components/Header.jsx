@@ -109,18 +109,18 @@ export default function Header() {
           {/* Botón hamburguesa - Solo visible en móvil */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden flex items-center justify-center w-8 h-8 rounded-md hover:bg-gray-100 transition-colors duration-200"
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-md hover:bg-gray-100 transition-colors duration-200"
             aria-label="Abrir menú"
           >
-            <div className="flex flex-col justify-center items-center space-y-1">
-              <div className={`w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
-                isMenuOpen ? 'rotate-45 translate-y-1.5' : ''
+            <div className="flex flex-col justify-center items-center w-6 h-6 relative">
+              <div className={`w-5 h-0.5 bg-gray-800 rounded-full transition-all duration-300 absolute ${
+                isMenuOpen ? 'rotate-45 translate-y-0' : '-translate-y-1.5'
               }`}></div>
-              <div className={`w-5 h-0.5 bg-gray-800 transition-opacity duration-300 ${
-                isMenuOpen ? 'opacity-0' : ''
+              <div className={`w-5 h-0.5 bg-gray-800 rounded-full transition-all duration-300 absolute ${
+                isMenuOpen ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
               }`}></div>
-              <div className={`w-5 h-0.5 bg-gray-800 transition-all duration-300 ${
-                isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
+              <div className={`w-5 h-0.5 bg-gray-800 rounded-full transition-all duration-300 absolute ${
+                isMenuOpen ? '-rotate-45 translate-y-0' : 'translate-y-1.5'
               }`}></div>
             </div>
           </button>
