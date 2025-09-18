@@ -87,19 +87,18 @@ export default function Header() {
               <span>Inicio</span>
             </Link>
             
-            <Link 
-              href="/portfolio" 
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-50 ${
-                pathname === '/portfolio' 
-                  ? 'text-blue-600 bg-blue-50 font-semibold' 
+            {/*<Link
+              href="/portfolio"
+              className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-50 ${pathname === '/portfolio'
+                  ? 'text-blue-600 bg-blue-50 font-semibold'
                   : 'text-gray-700 hover:text-blue-600'
-              }`}
+                }`}
             >
               <Briefcase size={20} />
               <span>Portafolio</span>
             </Link>
-            
-            <Link 
+            */}
+            {/*<Link 
               href="/contacto" 
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-50 ${
                 pathname === '/contacto' 
@@ -109,7 +108,7 @@ export default function Header() {
             >
               <User size={20} />
               <span>Contacto</span>
-            </Link>
+            </Link>*/}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -144,7 +143,7 @@ export default function Header() {
               <span>Inicio</span>
             </Link>
             
-            <Link 
+            {/*<Link 
               href="/portfolio" 
               className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 ${
                 pathname === '/portfolio' 
@@ -168,7 +167,7 @@ export default function Header() {
             >
               <User size={20} />
               <span>Contacto</span>
-            </Link>
+            </Link>*/}
           </nav>
         </div>
       )}
