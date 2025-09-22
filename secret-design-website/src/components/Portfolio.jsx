@@ -4,10 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 export default function Portfolio() {
-  const [expandedCard, setExpandedCard] = useState(null)
+  const [overlayCard, setOverlayCard] = useState(null)
 
-  const handleCardClick = (projectId) => {
-    setExpandedCard(expandedCard === projectId ? null : projectId)
+  const handleCardClick = (project) => {
+    setOverlayCard(project)
+  }
+
+  const closeOverlay = () => {
+    setOverlayCard(null)
   }
 
   const projects = [
@@ -73,29 +77,53 @@ export default function Portfolio() {
         
         <div className="portfolio-grid">
           {projects.map((project) => (
-            <div 
-              key={project.id} 
-              className={`portfolio-card ${expandedCard === project.id ? 'expanded' : ''}`}
-              onClick={() => handleCardClick(project.id)}
+            <div
+              key={project.id}
+              className="portfolio-card"
+              onClick={() => handleCardClick(project)}
             >
               <div className="portfolio-card-image">
-                <img 
+                <img
                   src={project.imageUrl}
                   alt={project.title}
                 />
               </div>
 
               <div className="portfolio-card-content">
-                <h3 className={`portfolio-card-title ${expandedCard === project.id ? '' : 'line-clamp-2'}`}>
+                <h3 className="portfolio-card-title line-clamp-2">
                   {project.title}
                 </h3>
-                <p className={`portfolio-card-description ${expandedCard === project.id ? '' : 'line-clamp-3'}`}>
+                <p className="portfolio-card-description line-clamp-3">
                   {project.description}
                 </p>
               </div>
             </div>
           ))}
         </div>
+
+        {overlayCard && (
+          <div className="portfolio-overlay" onClick={closeOverlay}>
+            <div className="portfolio-overlay-content" onClick={(e) => e.stopPropagation()}>
+              <button className="portfolio-overlay-close" onClick={closeOverlay}>
+                ×
+              </button>
+              <div className="portfolio-overlay-image">
+                <img
+                  src={overlayCard.imageUrl}
+                  alt={overlayCard.title}
+                />
+              </div>
+              <div className="portfolio-overlay-details">
+                <h3 className="portfolio-overlay-title">
+                  {overlayCard.title}
+                </h3>
+                <p className="portfolio-overlay-description">
+                  {overlayCard.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="portfolio-contact">
           <h2 className="portfolio-contact-title">

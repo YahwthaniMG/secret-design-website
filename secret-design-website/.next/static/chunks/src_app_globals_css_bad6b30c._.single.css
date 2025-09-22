@@ -561,35 +561,107 @@
     background-color: #1e40af;
   }
 
-  .portfolio-card.expanded {
-    background: #f8fafc;
-    border: 2px solid #3b82f6;
-    grid-column: 1 / -1;
+  .portfolio-overlay {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    animation: .3s ease-out overlayFadeIn;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @keyframes overlayFadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .portfolio-overlay-content {
+    background: #fff;
+    border-radius: 1rem;
+    width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    max-height: 90vh;
+    animation: .3s ease-out overlaySlideIn;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
   }
 
-  .portfolio-card.expanded .portfolio-card-image {
-    height: 16rem;
+  @keyframes overlaySlideIn {
+    from {
+      opacity: 0;
+      transform: scale(.9)translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1)translateY(0);
+    }
   }
 
-  .portfolio-card.expanded .portfolio-card-content {
-    height: auto;
+  .portfolio-overlay-close {
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+    background: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    transition: background-color .3s;
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .portfolio-overlay-close:hover {
+    background: rgba(0, 0, 0, .9);
+  }
+
+  .portfolio-overlay-image {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+  }
+
+  .portfolio-overlay-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-overlay-details {
     padding: 2rem;
   }
 
-  .portfolio-card.expanded .portfolio-card-title {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+  .portfolio-overlay-title {
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.25;
   }
 
-  .portfolio-card.expanded .portfolio-card-description {
-    -webkit-line-clamp: unset;
-    -webkit-box-orient: unset;
-    font-size: 1rem;
-    line-height: 1.6;
-    display: block;
-    overflow: visible;
+  .portfolio-overlay-description {
+    color: #4b5563;
+    font-size: 1.125rem;
+    line-height: 1.7;
   }
 }
 
